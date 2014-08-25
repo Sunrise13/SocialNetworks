@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2C9F94919A7803900F42C21 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C9F94819A7803900F42C21 /* Foundation.framework */; };
+		D2C9F94B19A7803900F42C21 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C9F94A19A7803900F42C21 /* CoreGraphics.framework */; };
+		D2C9F94D19A7803900F42C21 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C9F94C19A7803900F42C21 /* UIKit.framework */; };
+		D2C9F95319A7803900F42C21 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2C9F95119A7803900F42C21 /* InfoPlist.strings */; };
+		D2C9F95519A7803900F42C21 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C9F95419A7803900F42C21 /* main.m */; };
+		D2C9F95919A7803900F42C21 /* SLVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C9F95819A7803900F42C21 /* SLVAppDelegate.m */; };
+		D2C9F96119A7803900F42C21 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2C9F96019A7803900F42C21 /* Images.xcassets */; };
+		D2C9F96819A7803900F42C21 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C9F96719A7803900F42C21 /* XCTest.framework */; };
+		D2C9F96919A7803900F42C21 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C9F94819A7803900F42C21 /* Foundation.framework */; };
+		D2C9F96A19A7803900F42C21 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C9F94C19A7803900F42C21 /* UIKit.framework */; };
+		D2C9F97219A7803A00F42C21 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2C9F97019A7803A00F42C21 /* InfoPlist.strings */; };
+		D2C9F97419A7803A00F42C21 /* SocialNetworksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C9F97319A7803A00F42C21 /* SocialNetworksTests.m */; };
+		D2C9F98119A7815F00F42C21 /* SLVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C9F97F19A7815F00F42C21 /* SLVViewController.m */; };
+		D2C9F98519A7819E00F42C21 /* SLVSocialNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C9F98419A7819E00F42C21 /* SLVSocialNetwork.m */; };
+		D2C9F98919A781DE00F42C21 /* SLVOAuthSetup.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C9F98819A781DE00F42C21 /* SLVOAuthSetup.m */; };
+		D2C9F99019A7820000F42C21 /* SLVDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C9F98C19A7820000F42C21 /* SLVDBManager.m */; };
+		D2C9F99119A7820000F42C21 /* Users.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C9F98E19A7820000F42C21 /* Users.m */; };
+		D2C9F99219A7820000F42C21 /* Model.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = D2C9F98F19A7820000F42C21 /* Model.xcdatamodel */; };
+		D2C9F99619A7822F00F42C21 /* SLVBubblesController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C9F99519A7822F00F42C21 /* SLVBubblesController.m */; };
+		D2C9F99B19A7827E00F42C21 /* AAShareBubbles.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D2C9F99819A7827E00F42C21 /* AAShareBubbles.bundle */; };
+		D2C9F99C19A7827E00F42C21 /* AAShareBubbles.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C9F99A19A7827E00F42C21 /* AAShareBubbles.m */; };
+		D2C9F9A019A7874D00F42C21 /* SLVTokenSocialManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C9F99F19A7874D00F42C21 /* SLVTokenSocialManager.m */; };
+		D2C9F9A419A78ECE00F42C21 /* SLVShareResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C9F9A319A78ECE00F42C21 /* SLVShareResultViewController.m */; };
+		D2C9F9A719A79B6500F42C21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C9F9A619A79B6500F42C21 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D2C9F96B19A7803A00F42C21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2C9F93D19A7803900F42C21 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2C9F94419A7803900F42C21;
+			remoteInfo = SocialNetworks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D2C9F94519A7803900F42C21 /* SocialNetworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialNetworks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2C9F94819A7803900F42C21 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2C9F94A19A7803900F42C21 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D2C9F94C19A7803900F42C21 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D2C9F95019A7803900F42C21 /* SocialNetworks-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SocialNetworks-Info.plist"; sourceTree = "<group>"; };
+		D2C9F95219A7803900F42C21 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D2C9F95419A7803900F42C21 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D2C9F95619A7803900F42C21 /* SocialNetworks-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SocialNetworks-Prefix.pch"; sourceTree = "<group>"; };
+		D2C9F95719A7803900F42C21 /* SLVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLVAppDelegate.h; sourceTree = "<group>"; };
+		D2C9F95819A7803900F42C21 /* SLVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLVAppDelegate.m; sourceTree = "<group>"; };
+		D2C9F96019A7803900F42C21 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D2C9F96619A7803900F42C21 /* SocialNetworksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialNetworksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2C9F96719A7803900F42C21 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D2C9F96F19A7803A00F42C21 /* SocialNetworksTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SocialNetworksTests-Info.plist"; sourceTree = "<group>"; };
+		D2C9F97119A7803A00F42C21 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D2C9F97319A7803A00F42C21 /* SocialNetworksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialNetworksTests.m; sourceTree = "<group>"; };
+		D2C9F97E19A7815F00F42C21 /* SLVViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLVViewController.h; sourceTree = "<group>"; };
+		D2C9F97F19A7815F00F42C21 /* SLVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLVViewController.m; sourceTree = "<group>"; };
+		D2C9F98319A7819E00F42C21 /* SLVSocialNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLVSocialNetwork.h; sourceTree = "<group>"; };
+		D2C9F98419A7819E00F42C21 /* SLVSocialNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLVSocialNetwork.m; sourceTree = "<group>"; };
+		D2C9F98719A781DE00F42C21 /* SLVOAuthSetup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLVOAuthSetup.h; sourceTree = "<group>"; };
+		D2C9F98819A781DE00F42C21 /* SLVOAuthSetup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLVOAuthSetup.m; sourceTree = "<group>"; };
+		D2C9F98B19A7820000F42C21 /* SLVDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLVDBManager.h; sourceTree = "<group>"; };
+		D2C9F98C19A7820000F42C21 /* SLVDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLVDBManager.m; sourceTree = "<group>"; };
+		D2C9F98D19A7820000F42C21 /* Users.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Users.h; sourceTree = "<group>"; };
+		D2C9F98E19A7820000F42C21 /* Users.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Users.m; sourceTree = "<group>"; };
+		D2C9F98F19A7820000F42C21 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		D2C9F99419A7822F00F42C21 /* SLVBubblesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLVBubblesController.h; sourceTree = "<group>"; };
+		D2C9F99519A7822F00F42C21 /* SLVBubblesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLVBubblesController.m; sourceTree = "<group>"; };
+		D2C9F99819A7827E00F42C21 /* AAShareBubbles.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AAShareBubbles.bundle; sourceTree = "<group>"; };
+		D2C9F99919A7827E00F42C21 /* AAShareBubbles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAShareBubbles.h; sourceTree = "<group>"; };
+		D2C9F99A19A7827E00F42C21 /* AAShareBubbles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAShareBubbles.m; sourceTree = "<group>"; };
+		D2C9F99E19A7874D00F42C21 /* SLVTokenSocialManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLVTokenSocialManager.h; sourceTree = "<group>"; };
+		D2C9F99F19A7874D00F42C21 /* SLVTokenSocialManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLVTokenSocialManager.m; sourceTree = "<group>"; };
+		D2C9F9A219A78ECE00F42C21 /* SLVShareResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLVShareResultViewController.h; sourceTree = "<group>"; };
+		D2C9F9A319A78ECE00F42C21 /* SLVShareResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLVShareResultViewController.m; sourceTree = "<group>"; };
+		D2C9F9A619A79B6500F42C21 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D2C9F9A819A7A19800F42C21 /* ServiceTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceTypes.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2C9F94219A7803900F42C21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C9F94B19A7803900F42C21 /* CoreGraphics.framework in Frameworks */,
+				D2C9F94D19A7803900F42C21 /* UIKit.framework in Frameworks */,
+				D2C9F94919A7803900F42C21 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2C9F96319A7803900F42C21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C9F96819A7803900F42C21 /* XCTest.framework in Frameworks */,
+				D2C9F96A19A7803900F42C21 /* UIKit.framework in Frameworks */,
+				D2C9F96919A7803900F42C21 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D2C9F93C19A7803900F42C21 = {
+			isa = PBXGroup;
+			children = (
+				D2C9F94E19A7803900F42C21 /* SocialNetworks */,
+				D2C9F96D19A7803A00F42C21 /* SocialNetworksTests */,
+				D2C9F94719A7803900F42C21 /* Frameworks */,
+				D2C9F94619A7803900F42C21 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2C9F94619A7803900F42C21 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2C9F94519A7803900F42C21 /* SocialNetworks.app */,
+				D2C9F96619A7803900F42C21 /* SocialNetworksTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2C9F94719A7803900F42C21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2C9F94819A7803900F42C21 /* Foundation.framework */,
+				D2C9F94A19A7803900F42C21 /* CoreGraphics.framework */,
+				D2C9F94C19A7803900F42C21 /* UIKit.framework */,
+				D2C9F96719A7803900F42C21 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2C9F94E19A7803900F42C21 /* SocialNetworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2C9F9A619A79B6500F42C21 /* Main.storyboard */,
+				D2C9F9A119A78E7900F42C21 /* ShareResultViewController */,
+				D2C9F99D19A7871500F42C21 /* TokenSocialManager */,
+				D2C9F99319A7821D00F42C21 /* BubblesViewController */,
+				D2C9F98A19A781EB00F42C21 /* DBManager */,
+				D2C9F98619A781D000F42C21 /* OAuthSetup */,
+				D2C9F98219A7817A00F42C21 /* SocialNetwork */,
+				D2C9F97E19A7815F00F42C21 /* SLVViewController.h */,
+				D2C9F97F19A7815F00F42C21 /* SLVViewController.m */,
+				D2C9F95719A7803900F42C21 /* SLVAppDelegate.h */,
+				D2C9F95819A7803900F42C21 /* SLVAppDelegate.m */,
+				D2C9F96019A7803900F42C21 /* Images.xcassets */,
+				D2C9F94F19A7803900F42C21 /* Supporting Files */,
+				D2C9F9A819A7A19800F42C21 /* ServiceTypes.h */,
+			);
+			path = SocialNetworks;
+			sourceTree = "<group>";
+		};
+		D2C9F94F19A7803900F42C21 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2C9F99719A7826500F42C21 /* AAShareBubbles */,
+				D2C9F95019A7803900F42C21 /* SocialNetworks-Info.plist */,
+				D2C9F95119A7803900F42C21 /* InfoPlist.strings */,
+				D2C9F95419A7803900F42C21 /* main.m */,
+				D2C9F95619A7803900F42C21 /* SocialNetworks-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D2C9F96D19A7803A00F42C21 /* SocialNetworksTests */ = {
+			isa = PBXGroup;
+			children = (
+				D2C9F97319A7803A00F42C21 /* SocialNetworksTests.m */,
+				D2C9F96E19A7803A00F42C21 /* Supporting Files */,
+			);
+			path = SocialNetworksTests;
+			sourceTree = "<group>";
+		};
+		D2C9F96E19A7803A00F42C21 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2C9F96F19A7803A00F42C21 /* SocialNetworksTests-Info.plist */,
+				D2C9F97019A7803A00F42C21 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D2C9F98219A7817A00F42C21 /* SocialNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				D2C9F98319A7819E00F42C21 /* SLVSocialNetwork.h */,
+				D2C9F98419A7819E00F42C21 /* SLVSocialNetwork.m */,
+			);
+			name = SocialNetwork;
+			sourceTree = "<group>";
+		};
+		D2C9F98619A781D000F42C21 /* OAuthSetup */ = {
+			isa = PBXGroup;
+			children = (
+				D2C9F98719A781DE00F42C21 /* SLVOAuthSetup.h */,
+				D2C9F98819A781DE00F42C21 /* SLVOAuthSetup.m */,
+			);
+			name = OAuthSetup;
+			sourceTree = "<group>";
+		};
+		D2C9F98A19A781EB00F42C21 /* DBManager */ = {
+			isa = PBXGroup;
+			children = (
+				D2C9F98B19A7820000F42C21 /* SLVDBManager.h */,
+				D2C9F98C19A7820000F42C21 /* SLVDBManager.m */,
+				D2C9F98D19A7820000F42C21 /* Users.h */,
+				D2C9F98E19A7820000F42C21 /* Users.m */,
+				D2C9F98F19A7820000F42C21 /* Model.xcdatamodel */,
+			);
+			name = DBManager;
+			sourceTree = "<group>";
+		};
+		D2C9F99319A7821D00F42C21 /* BubblesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D2C9F99419A7822F00F42C21 /* SLVBubblesController.h */,
+				D2C9F99519A7822F00F42C21 /* SLVBubblesController.m */,
+			);
+			name = BubblesViewController;
+			sourceTree = "<group>";
+		};
+		D2C9F99719A7826500F42C21 /* AAShareBubbles */ = {
+			isa = PBXGroup;
+			children = (
+				D2C9F99819A7827E00F42C21 /* AAShareBubbles.bundle */,
+				D2C9F99919A7827E00F42C21 /* AAShareBubbles.h */,
+				D2C9F99A19A7827E00F42C21 /* AAShareBubbles.m */,
+			);
+			name = AAShareBubbles;
+			sourceTree = "<group>";
+		};
+		D2C9F99D19A7871500F42C21 /* TokenSocialManager */ = {
+			isa = PBXGroup;
+			children = (
+				D2C9F99E19A7874D00F42C21 /* SLVTokenSocialManager.h */,
+				D2C9F99F19A7874D00F42C21 /* SLVTokenSocialManager.m */,
+			);
+			name = TokenSocialManager;
+			sourceTree = "<group>";
+		};
+		D2C9F9A119A78E7900F42C21 /* ShareResultViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D2C9F9A219A78ECE00F42C21 /* SLVShareResultViewController.h */,
+				D2C9F9A319A78ECE00F42C21 /* SLVShareResultViewController.m */,
+			);
+			name = ShareResultViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2C9F94419A7803900F42C21 /* SocialNetworks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2C9F97719A7803A00F42C21 /* Build configuration list for PBXNativeTarget "SocialNetworks" */;
+			buildPhases = (
+				D2C9F94119A7803900F42C21 /* Sources */,
+				D2C9F94219A7803900F42C21 /* Frameworks */,
+				D2C9F94319A7803900F42C21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocialNetworks;
+			productName = SocialNetworks;
+			productReference = D2C9F94519A7803900F42C21 /* SocialNetworks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2C9F96519A7803900F42C21 /* SocialNetworksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2C9F97A19A7803A00F42C21 /* Build configuration list for PBXNativeTarget "SocialNetworksTests" */;
+			buildPhases = (
+				D2C9F96219A7803900F42C21 /* Sources */,
+				D2C9F96319A7803900F42C21 /* Frameworks */,
+				D2C9F96419A7803900F42C21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2C9F96C19A7803A00F42C21 /* PBXTargetDependency */,
+			);
+			name = SocialNetworksTests;
+			productName = SocialNetworksTests;
+			productReference = D2C9F96619A7803900F42C21 /* SocialNetworksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2C9F93D19A7803900F42C21 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SLV;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "SoftServe Lv-120";
+				TargetAttributes = {
+					D2C9F96519A7803900F42C21 = {
+						TestTargetID = D2C9F94419A7803900F42C21;
+					};
+				};
+			};
+			buildConfigurationList = D2C9F94019A7803900F42C21 /* Build configuration list for PBXProject "SocialNetworks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2C9F93C19A7803900F42C21;
+			productRefGroup = D2C9F94619A7803900F42C21 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2C9F94419A7803900F42C21 /* SocialNetworks */,
+				D2C9F96519A7803900F42C21 /* SocialNetworksTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2C9F94319A7803900F42C21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C9F99B19A7827E00F42C21 /* AAShareBubbles.bundle in Resources */,
+				D2C9F9A719A79B6500F42C21 /* Main.storyboard in Resources */,
+				D2C9F96119A7803900F42C21 /* Images.xcassets in Resources */,
+				D2C9F95319A7803900F42C21 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2C9F96419A7803900F42C21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C9F97219A7803A00F42C21 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2C9F94119A7803900F42C21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C9F98919A781DE00F42C21 /* SLVOAuthSetup.m in Sources */,
+				D2C9F99C19A7827E00F42C21 /* AAShareBubbles.m in Sources */,
+				D2C9F99619A7822F00F42C21 /* SLVBubblesController.m in Sources */,
+				D2C9F9A419A78ECE00F42C21 /* SLVShareResultViewController.m in Sources */,
+				D2C9F98519A7819E00F42C21 /* SLVSocialNetwork.m in Sources */,
+				D2C9F95919A7803900F42C21 /* SLVAppDelegate.m in Sources */,
+				D2C9F99119A7820000F42C21 /* Users.m in Sources */,
+				D2C9F99019A7820000F42C21 /* SLVDBManager.m in Sources */,
+				D2C9F98119A7815F00F42C21 /* SLVViewController.m in Sources */,
+				D2C9F99219A7820000F42C21 /* Model.xcdatamodel in Sources */,
+				D2C9F95519A7803900F42C21 /* main.m in Sources */,
+				D2C9F9A019A7874D00F42C21 /* SLVTokenSocialManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2C9F96219A7803900F42C21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C9F97419A7803A00F42C21 /* SocialNetworksTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D2C9F96C19A7803A00F42C21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2C9F94419A7803900F42C21 /* SocialNetworks */;
+			targetProxy = D2C9F96B19A7803A00F42C21 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D2C9F95119A7803900F42C21 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2C9F95219A7803900F42C21 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D2C9F97019A7803A00F42C21 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2C9F97119A7803A00F42C21 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2C9F97519A7803A00F42C21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		D2C9F97619A7803A00F42C21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2C9F97819A7803A00F42C21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SocialNetworks/SocialNetworks-Prefix.pch";
+				INFOPLIST_FILE = "SocialNetworks/SocialNetworks-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D2C9F97919A7803A00F42C21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SocialNetworks/SocialNetworks-Prefix.pch";
+				INFOPLIST_FILE = "SocialNetworks/SocialNetworks-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D2C9F97B19A7803A00F42C21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SocialNetworks.app/SocialNetworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SocialNetworks/SocialNetworks-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SocialNetworksTests/SocialNetworksTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D2C9F97C19A7803A00F42C21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SocialNetworks.app/SocialNetworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SocialNetworks/SocialNetworks-Prefix.pch";
+				INFOPLIST_FILE = "SocialNetworksTests/SocialNetworksTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2C9F94019A7803900F42C21 /* Build configuration list for PBXProject "SocialNetworks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2C9F97519A7803A00F42C21 /* Debug */,
+				D2C9F97619A7803A00F42C21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2C9F97719A7803A00F42C21 /* Build configuration list for PBXNativeTarget "SocialNetworks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2C9F97819A7803A00F42C21 /* Debug */,
+				D2C9F97919A7803A00F42C21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D2C9F97A19A7803A00F42C21 /* Build configuration list for PBXNativeTarget "SocialNetworksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2C9F97B19A7803A00F42C21 /* Debug */,
+				D2C9F97C19A7803A00F42C21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2C9F93D19A7803900F42C21 /* Project object */;
+}
